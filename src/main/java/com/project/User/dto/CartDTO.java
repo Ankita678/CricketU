@@ -1,7 +1,6 @@
 package com.project.User.dto;
 
 import com.project.User.entity.Cart;
-import com.project.User.entity.Wishlist;
 
 public class CartDTO {
 
