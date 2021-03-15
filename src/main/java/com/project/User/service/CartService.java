@@ -1,4 +1,4 @@
-package com.project.User.service;
+package com.project.user.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,13 +9,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.project.User.dto.CartDTO;
+import com.project.user.dto.CartDTO;
 
-import com.project.User.entity.Cart;
-import com.project.User.entity.CompositePK;
-import com.project.User.entity.Wishlist;
-import com.project.User.repository.CartRepository;
-import com.project.User.repository.WishlistRepository;
+import com.project.user.entity.Cart;
+import com.project.user.entity.CompositePK;
+import com.project.user.entity.Wishlist;
+import com.project.user.repository.CartRepository;
+import com.project.user.repository.WishlistRepository;
 
 @Service
 public class CartService {

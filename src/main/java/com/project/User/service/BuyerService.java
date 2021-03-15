@@ -1,14 +1,14 @@
-package com.project.User.service;
+package com.project.user.service;
 
 import org.springframework.stereotype.Service;
 
-import com.project.User.dto.BuyerDTO;
-import com.project.User.dto.BuyerLoginDTO;
+import com.project.user.dto.BuyerDTO;
+import com.project.user.dto.BuyerLoginDTO;
 
-import com.project.User.entity.Buyer;
+import com.project.user.entity.Buyer;
 
-import com.project.User.repository.BuyerRepository;
-import com.project.User.validator.Validator;
+import com.project.user.repository.BuyerRepository;
+import com.project.user.validator.Validator;
 
 import java.util.ArrayList;
 import java.util.List;

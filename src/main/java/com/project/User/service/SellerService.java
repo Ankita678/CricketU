@@ -1,4 +1,4 @@
-package com.project.User.service;
+package com.project.user.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,12 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-import com.project.User.dto.SellerDTO;
-import com.project.User.dto.SellerLoginDTO;
+import com.project.user.dto.SellerDTO;
+import com.project.user.dto.SellerLoginDTO;
 
-import com.project.User.entity.Seller;
-import com.project.User.repository.SellerRepository;
-import com.project.User.validator.Validator;
+import com.project.user.entity.Seller;
+import com.project.user.repository.SellerRepository;
+import com.project.user.validator.Validator;
 
 @Service
 public class SellerService {

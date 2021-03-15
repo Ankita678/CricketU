@@ -1,4 +1,4 @@
-package com.project.User.controller;
+package com.project.user.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.project.User.dto.SellerDTO;
-import com.project.User.dto.SellerLoginDTO;
-import com.project.User.service.SellerService;
+import com.project.user.dto.SellerDTO;
+import com.project.user.dto.SellerLoginDTO;
+import com.project.user.service.SellerService;
 
 @RestController
 @CrossOrigin

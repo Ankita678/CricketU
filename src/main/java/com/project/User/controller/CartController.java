@@ -1,4 +1,4 @@
-package com.project.User.controller;
+package com.project.user.controller;
 
 import java.util.List;
 
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.project.User.dto.CartDTO;
-import com.project.User.dto.ProductDTO;
+import com.project.user.dto.CartDTO;
+import com.project.user.dto.ProductDTO;
 
-import com.project.User.service.CartService;
+import com.project.user.service.CartService;
 
 
 @RestController

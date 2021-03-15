@@ -1,4 +1,4 @@
-package com.project.User.controller;
+package com.project.user.controller;
 
 import java.util.List;
 
@@ -16,10 +16,10 @@ import org.springframework.web.client.RestTemplate;
 
 
 
-import com.project.User.dto.ProductDTO;
-import com.project.User.dto.WishlistDTO;
-import com.project.User.service.CartService;
-import com.project.User.service.WishlistService;
+import com.project.user.dto.ProductDTO;
+import com.project.user.dto.WishlistDTO;
+import com.project.user.service.CartService;
+import com.project.user.service.WishlistService;
 
 @RestController
 @CrossOrigin

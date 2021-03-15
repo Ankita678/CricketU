@@ -1,4 +1,4 @@
-package com.project.User.controller;
+package com.project.user.controller;
 
 import java.util.List;
 
@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.project.User.dto.BuyerDTO;
-import com.project.User.dto.BuyerLoginDTO;
-import com.project.User.service.BuyerService;
+import com.project.user.dto.BuyerDTO;
+import com.project.user.dto.BuyerLoginDTO;
+import com.project.user.service.BuyerService;
 
 
 @RestController

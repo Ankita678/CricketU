@@ -1,4 +1,4 @@
-package com.project.User.entity;
+package com.project.user.entity;
 
 
 

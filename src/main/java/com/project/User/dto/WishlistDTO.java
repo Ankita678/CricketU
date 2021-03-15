@@ -1,6 +1,6 @@
-package com.project.User.dto;
+package com.project.user.dto;
 
-import com.project.User.entity.Wishlist;
+import com.project.user.entity.Wishlist;
 
 
 public class WishlistDTO {

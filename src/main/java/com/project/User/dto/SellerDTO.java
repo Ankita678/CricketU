@@ -1,7 +1,7 @@
-package com.project.User.dto;
+package com.project.user.dto;
 
 
-import com.project.User.entity.Seller;
+import com.project.user.entity.Seller;
 
 public class SellerDTO {
 

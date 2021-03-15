@@ -1,4 +1,4 @@
-package com.project.User.repository;
+package com.project.user.repository;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 
-import com.project.User.entity.Cart;
-import com.project.User.entity.CompositePK;
+import com.project.user.entity.Cart;
+import com.project.user.entity.CompositePK;
 
 @Repository
 public interface CartRepository extends JpaRepository<Cart, CompositePK>{

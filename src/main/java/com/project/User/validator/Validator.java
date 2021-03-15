@@ -1,7 +1,7 @@
-package com.project.User.validator;
+package com.project.user.validator;
 
-import com.project.User.dto.BuyerDTO;
-import com.project.User.dto.SellerDTO;
+import com.project.user.dto.BuyerDTO;
+import com.project.user.dto.SellerDTO;
 
 public class Validator {
 

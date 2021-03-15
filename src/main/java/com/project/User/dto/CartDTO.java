@@ -1,6 +1,6 @@
-package com.project.User.dto;
+package com.project.user.dto;
 
-import com.project.User.entity.Cart;
+import com.project.user.entity.Cart;
 
 public class CartDTO {
 

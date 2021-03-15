@@ -1,4 +1,4 @@
-package com.project.User.dto;
+package com.project.user.dto;
 
 
 
