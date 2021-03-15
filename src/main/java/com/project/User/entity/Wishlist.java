@@ -6,18 +6,9 @@ import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.Table;
 
-
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 @Entity
-@Table(name="wishlist")
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 @IdClass(CompositePK.class)
+@Table(name="wishlist")
 public class Wishlist {
 	
 	@Id

@@ -48,20 +48,25 @@ Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	public void removeProduct(CartDTO cartDTO) {
 		logger.info("Delete product from cart", cartDTO);
-		Optional <Cart> cart = cartRepo.findById(new CompositePK(cartDTO.getBuyerId(),cartDTO.getProdId()));
+		CompositePK compKey = new CompositePK();
+		compKey.setBuyerId(cartDTO.getBuyerId());
+		compKey.setProdId(cartDTO.getProdId());
+		Optional <Cart> cart = cartRepo.findById(compKey);
 		if(cart.isPresent()) {
-			cartRepo.deleteById(new CompositePK(cartDTO.getBuyerId(),cartDTO.getProdId()));
+			cartRepo.deleteById(compKey);
 		}
 	}
 	
 	public boolean wishlistToCart(CartDTO cartDTO) {
 		logger.info("Move Product from cart", cartDTO);
-		
-		Optional <Wishlist> wishlist = wishlistRepo.findById(new CompositePK(cartDTO.getBuyerId(),cartDTO.getProdId()));
+		CompositePK compKey = new CompositePK();
+		compKey.setBuyerId(cartDTO.getBuyerId());
+		compKey.setProdId(cartDTO.getProdId());
+		Optional <Wishlist> wishlist = wishlistRepo.findById(compKey);
 		if(wishlist.isPresent()) {
 			Cart cart = cartDTO.createEntity();
 			cartRepo.save(cart);
-			wishlistRepo.deleteById(new CompositePK(cartDTO.getBuyerId(),cartDTO.getProdId()));
+			wishlistRepo.deleteById(compKey);
 			return true;
 		}
 		return false;

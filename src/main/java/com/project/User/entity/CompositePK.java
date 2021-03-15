@@ -2,16 +2,16 @@ package com.project.User.entity;
 
 import java.io.Serializable;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
-@Data
-@EqualsAndHashCode
+
+@Embeddable
 public class CompositePK implements Serializable{
 
+	@Column(name="BUYERID",nullable=false)
 	private int buyerId;
+	@Column(name="PRODID",nullable=false)
 	private int prodId;
 	
 	public int getBuyerId() {
@@ -26,14 +26,7 @@ public class CompositePK implements Serializable{
 	public void setProdId(int prodId) {
 		this.prodId = prodId;
 	}
-	public CompositePK(int buyerId, int prodId) {
-		super();
-		this.buyerId = buyerId;
-		this.prodId = prodId;
-	}
-	public CompositePK() {
-		super();
-	}
+	
 	
 	
 }

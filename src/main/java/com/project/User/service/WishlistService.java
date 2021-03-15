@@ -47,9 +47,12 @@ public class WishlistService {
 	
 	public void removeProduct(WishlistDTO wishlistDTO) throws Exception{
 		logger.info("Delete product from wishlist", wishlistDTO);
-		Optional <Wishlist> wishlist = wishlistRepo.findById(new CompositePK(wishlistDTO.getBuyerId(),wishlistDTO.getProdId()));
+		CompositePK compKey = new CompositePK();
+		compKey.setBuyerId(wishlistDTO.getBuyerId());
+		compKey.setProdId(wishlistDTO.getProdId());
+		Optional <Wishlist> wishlist = wishlistRepo.findById(compKey);
 		if(wishlist.isPresent()) {
-			wishlistRepo.deleteById(new CompositePK(wishlistDTO.getBuyerId(),wishlistDTO.getProdId()));
+			wishlistRepo.deleteById(compKey);
 		}else {
 			throw new Exception("Wishlist.NOT_AVAILABLE");
 		}
